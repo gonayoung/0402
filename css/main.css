@@ -1,0 +1,582 @@
+@charset "UTF-8";
+
+
+
+/*슬라이더*/
+#slider {
+    width: 100%;
+    height: 680px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    /* 가로 중앙 정렬 */
+    align-items: center;
+    /* 세로 중앙 정렬 */
+}
+
+/* 슬라이더 내부 콘텐츠 스타일 */
+.ex {
+    display: flex;
+    /* 아이콘들을 가로 정렬 */
+    justify-content: center;
+    align-items: center;
+    /* 세로 중앙 정렬 */
+    gap: 15px;
+    /* 이미지 사이 간격 */
+}
+
+/* 각 아이콘박스 스타일 */
+.iconbox {
+    width: 420px;
+    height: 420px;
+}
+
+/* 아이콘박스 내부 이미지 스타일 */
+.iconbox a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* 이미지가 박스 크기에 맞게 채우도록 설정 */
+}
+
+/*섹션*/
+section {
+    width: 1180px;
+    height: 5400px;
+    margin: 0 auto;
+}
+
+#market {
+    width: 100%;
+    height: 120px;
+
+}
+
+#market>img {
+    width: 900px;
+    height: 90px;
+    margin: 10px 0 0px 130px;
+}
+
+#menu {
+    width: 1020px;
+    height: 300px;
+    margin: 15px 0px;
+    float: left;
+}
+
+#menu>.menubox {
+    width: 113px;
+    height: 180px;
+    margin: 7px 10px;
+    float: left;
+    text-align: center;
+}
+
+#menu>.menubox>a>img {
+    width: 113px;
+    height: 113px;
+    margin: 15px 0px;
+}
+
+#menu>.menubox>span>a {
+    color: #212121;
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+}
+
+#seasontitle {
+    width: 1000px;
+    height: 114px;
+    margin: 5px 16px;
+    float: left;
+}
+
+#seasontitle>h3 {
+    float: left;
+    font-size: 26px;
+}
+
+/* 섹션 전체 */
+#season {
+    width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    margin: 5px auto;
+}
+
+/* 개별 상품 박스 */
+.seasonbox {
+    width: 260px;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    text-align: left;
+    padding: 10px;
+}
+
+/* 이미지 스타일 */
+.seasonbox img {
+    width: 100%;
+    height: 249px;
+    transition: opacity 0.3s;
+}
+
+.seasonbox img:hover {
+    opacity: 0.6;
+}
+
+/* 상품명 */
+.seasonbox p a {
+    font-size: 15px;
+    color: #000;
+    text-decoration: none;
+    display: block;
+    margin: 10px 0;
+}
+
+/* 가격 영역 */
+.price-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+}
+
+.price-box>h4>a {
+    font-size: 20px;
+    color: black;
+    margin: 0;
+    text-decoration: none;
+}
+
+.price-box>span>a {
+    font-size: 14px;
+    text-decoration: line-through;
+    color: gray;
+
+}
+
+/* 버튼 */
+.sale {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: white;
+    background-color: #fe5356;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.best {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: #fe5356;
+    background-color: #ddd;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.md {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: black;
+    background-color: #ddd;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+.hot {
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+    color: black;
+    background-color: #ddd;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 5px;
+    text-decoration: none;
+}
+
+
+/* 설명 텍스트 */
+.seasonbox>span>a {
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+    text-decoration: none;
+    display: block;
+}
+
+/* 배송 정보 */
+.seasonbox ul {
+    list-style: none;
+    padding: 8px;
+    font-size: 13px;
+    color: black;
+}
+
+
+
+#today-section {
+    width: 1100px;
+    margin: 0 auto;
+
+}
+
+#todaytitle {
+    display: flex;
+    align-items: center;
+    width: 1080px;
+    height: 160px;
+}
+
+#todaytitle h3 {
+    font-size: 26px;
+    margin: 0;
+    white-space: nowrap;
+}
+
+#todaytitle p {
+    margin: 0;
+}
+
+#todaytitle p a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    display: inline-block;
+}
+
+
+/* 추천 상품 리스트 */
+#today {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.todaybox {
+    width: 240px;
+    height: 400px;
+    text-align: center;
+}
+
+.todaybox>a>img {
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+
+.todaybox>span>a {
+    color: #212121;
+    font-size: 15px;
+    display: block;
+    text-decoration: none;
+}
+
+.todaybox>h5>a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    margin-top: 5px;
+    font-size: 27px;
+}
+
+#homemakase {
+    width: 1300px;
+    height: 270px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#homemakase>a>img {
+    width: 1160px;
+    height: 154px;
+    float: left;
+}
+
+#news {
+    width: 1200px;
+    height: 520px;
+    margin: 5px 0px;
+    text-decoration: none;
+}
+
+#news>.text-box {
+    width: 510px;
+    height: 305x;
+    margin: 10px 60px;
+    float: left;
+
+}
+
+#news>.text-box>h3 {
+    color: #000;
+    font-size: 28px;
+    margin: 0px 0 5px 0px;
+}
+
+#news>.text-box>h4 {
+    color: rgb(99, 99, 99);
+    ;
+    font-size: 18px;
+    margin: 0px 0 5px 0px;
+}
+
+#news>.text-box>p {
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555;
+}
+
+#news>.text-box>button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #384b46;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+    margin-top: 50px;
+}
+
+#news>img {
+    width: 100%;
+    max-width: 560px;
+    height: auto;
+    display: block;
+}
+
+
+#image {
+    width: 1200px;
+    height: 250px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#image>img {
+    width: 1160px;
+    height: 155px;
+    float: left;
+}
+
+#delivery-section {
+    width: 1080px;
+    margin: 0 20px;
+    padding: 0 20px;
+    height: 850px;
+}
+
+#deliverytitle {
+    width: 1080px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+#deliverytitle h3 {
+    font-size: 25px;
+    margin: 0;
+}
+
+#deliverytitle p {
+    font-size: 12px;
+    color: #000;
+    margin: 0;
+}
+
+#delivery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 16px;
+    justify-content: center;
+}
+
+.deliverybox {
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    padding: 4px;
+}
+
+.deliverybox img {
+    width: 249px;
+    height: 249px;
+}
+
+.deliverybox img:hover {
+    opacity: 0.5;
+}
+
+.deliverybox p a {
+    font-size: 12px;
+    color: #000;
+    text-decoration: none;
+    margin: 8px 0;
+}
+
+.delivery-price {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.delivery-price h4 a {
+    font-size: 16px;
+    color: #000;
+    text-decoration: none;
+}
+
+.delivery-price span a {
+    font-size: 12px;
+    color: gray;
+    text-decoration: line-through;
+}
+
+#delivery button {
+    margin: 30px auto 0;
+    padding: 12px 28px;
+    font-size: 14px;
+    text-align: center;
+    border: none;
+    border-radius: 20px;
+    background-color: #eee;
+    cursor: pointer;
+    transition: 0.3s;
+    display: block;
+    color: #727272;
+    ;
+}
+
+#padotitle {
+    width: 1000px;
+    height: 100px;
+    margin: 5px 16px;
+    float: left;
+}
+
+#padotitle>.padolavel>p {
+    font-size: 24px;
+}
+
+#padotitle>.padolavel>span {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#pado {
+    width: 1080px;
+    height: 450px;
+    margin: 5px 0px;
+    float: left;
+}
+
+#pado>.padoimage {
+    width: 340px;
+    height: 340px;
+    margin: 20px 5px;
+    float: left;
+}
+
+#pado>.padoimage>a>img {
+    width: 100%;
+    height: 256px;
+}
+
+#pado>.padoimage>h3>a {
+    margin: 0;
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+}
+
+#pado>.padoimage>h4>a {
+    margin: 0;
+    font-size: 13px;
+    text-decoration: none;
+    color: #999;
+}
+
+#todayfoodtitle {
+    width: 1000px;
+    height: 60px;
+    margin: 5px 16px;
+    float: left;
+}
+
+#todayfoodtitle>h3 {
+    float: left;
+    font-size: 25px;
+    color: #000;
+    margin: 10px 0px;
+}
+
+#todayfoodtitle>p>a {
+    float: left;
+    text-decoration: none;
+    color: #323131;
+    font-size: 13px;
+    margin: 25px 0 0 15px;
+}
+
+
+#todayfood {
+    width: 1080px;
+    height: 600px;
+    margin: 5px 0px;
+    float: left;
+}
+
+#todayfood>.todayfood-box {
+    width: 240px;
+    height: 560px;
+    margin: 10px 15px;
+    float: left;
+}
+
+#todayfood>.todayfood-box>a>img {
+    width: 100%;
+    height: 420px;
+    margin: 0px 0 15px 0px;
+}
+
+#todayfood>.todayfood-box>h4>a {
+    margin: 0px;
+    font-size: 16px;
+    text-decoration: none;
+    color: #000;
+}
+
+#todayfood>.todayfood-box>span>a {
+    margin: 0px;
+    font-size: 14px;
+    text-decoration: none;
+    color: #4b4a4a;
+}
+
+
